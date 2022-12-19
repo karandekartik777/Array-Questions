@@ -1,0 +1,9 @@
+def kthmax(arr,pos):
+    arr.sort()
+    maxele = arr[pos-1]
+    minele= arr[pos-1]
+    
+    return print("max is ",maxele,"min is ",minele)
+    
+arr=[3,4,2,5,66,4,4,66,77,983]
+print(kthmax(arr,4))
