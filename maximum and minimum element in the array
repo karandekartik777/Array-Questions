@@ -1,0 +1,10 @@
+def minmax(arr):
+    minelement = min(arr)
+    maxelement = max(arr)
+    
+    return print('max element is ',maxelement,"min element is ",minelement)
+    
+arr=[1,22,33,22,11,22,444]
+print(minmax(arr))
+    
+    
