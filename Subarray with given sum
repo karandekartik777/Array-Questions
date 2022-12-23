@@ -1,0 +1,23 @@
+Find Subarray with given sum 
+arr = [1,2,3,4,5,6,7,8] sum = 18
+output  = [3,4,5,6]
+
+
+def substringsum(arr,s):
+    result = []
+    for i in range(len(arr)):
+        result.append(arr[i])
+        
+        while sum(result)>s:
+            result.pop(0)
+            
+        if sum(result)==s:
+            return result
+        
+    print("there is no such substring with given sum")
+            
+arr = [1,2,3,4,5,6,7]
+        
+print(substringsum(arr,18))
+        
+        
