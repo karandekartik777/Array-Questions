@@ -1,0 +1,20 @@
+def binarysearch(arr,low,high ,ele):
+    
+    while low<=high:
+        mid = (low+high)//2
+        
+        if arr[mid]==ele:
+            return mid
+            
+        elif ele > arr[mid]:
+            low = arr[mid]+1
+            
+        else:
+            high = mid -1
+    
+    return -1
+    
+arr=[1,2,3,4,5,6,7,8,9,44]
+print(binarysearch(arr,0,len(arr)-1 ,5))
+            
+        
