@@ -12,3 +12,19 @@ print(removeDups(arr))
 
 
 ===============================================================
+
+
+
+def findDups(arr):
+    result  = []
+    for i in arr:
+        num = abs(i)
+        
+        if arr[num -1]>0:
+            arr[num-1]*=-1
+        else:
+            result.append(num)
+    return result
+    
+arr = [1,2,3,4,5,6,7,3]
+print(findDups(arr))
