@@ -1,1 +1,19 @@
 
+def count_fre():
+
+    arr = [1,2,2,2,3,4,5,6,7]
+    hasharr = [0]*len(arr)
+    print(hasharr)
+        
+    for i in range(len(arr)):
+        hasharr[arr[i]]+=1
+    
+    new_arr= [1,2,3,12]
+    for j in range(len(new_arr)):
+        print(arr[j],'----->',hasharr[j])
+        
+
+print('***********')
+print(count_fre()) 
+print('***********')
+        
